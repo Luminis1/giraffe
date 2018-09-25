@@ -23,5 +23,8 @@
         @endif
 
     </form>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
     </main>
     @endsection
